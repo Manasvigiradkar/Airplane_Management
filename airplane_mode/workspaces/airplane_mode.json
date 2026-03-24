@@ -1,0 +1,41 @@
+{
+  "name": "Airplane Mode",
+  "title": "Airplane Mode",
+  "module": "Airplane Mode",
+  "public": 1,
+  "content": [
+    {
+      "type": "section",
+      "data": {
+        "label": "Airplane Shortcuts"
+      }
+    },
+    {
+      "type": "shortcut",
+      "data": {
+        "label": "Airlines",
+        "type": "DocType",
+        "doctype": "Airline",
+        "view": "List"
+      }
+    },
+    {
+      "type": "shortcut",
+      "data": {
+        "label": "All Passengers",
+        "type": "DocType",
+        "doctype": "Flight Passenger",
+        "view": "List"
+      }
+    },
+    {
+      "type": "shortcut",
+      "data": {
+        "label": "All Airplanes",
+        "type": "DocType",
+        "doctype": "Airplane",
+        "view": "List"
+      }
+    }
+  ]
+}

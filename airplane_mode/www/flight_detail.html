@@ -1,0 +1,34 @@
+<h1>{{ flight.name }}</h1>
+
+<h3>Flight Details</h3>
+
+<ul>
+    <li><strong>Airplane:</strong> {{ flight.airplane }}</li>
+    <li>
+        {{ flight.source_airport_code }} →
+        {{ flight.destination_airport_code }}
+    </li>
+    <li>
+        {{ flight.date_of_departure }}
+        {{ flight.time_of_departure }}
+    </li>
+    <li>
+        Duration: {{ duration_formatted }}
+
+    </li>
+</ul>
+
+<br>
+
+<a href="/book-flight-ticket/new?flight={{ flight.name }}"
+   style="background:#2490ef;
+          color:white;
+          padding:10px 20px;
+          border-radius:6px;
+          text-decoration:none;">
+    Book Flight
+</a>
+
+
+
+

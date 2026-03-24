@@ -5,6 +5,15 @@ app_description = "This is Airplane management app."
 app_email = "Manasvigiradkar64@gmail.com"
 app_license = "mit"
 
+fixtures = [
+    "Workspace"
+]
+doctype_js = {
+    "Airplane": "doctype/airplane/airplane.js"
+}
+app_include_js = "/assets/airplane_management/js/airplane.js"
+
+
 # Apps
 # ------------------
 

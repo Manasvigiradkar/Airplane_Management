@@ -1,0 +1,20 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+<h2>Show Me Colors</h2>
+
+{% set color = frappe.form_dict.color or "black" %}
+
+<div style="
+    width: 300px;
+    height: 150px;
+    background-color: {{ color }};
+    border-radius: 12px;
+    border: 1px solid #ccc;
+">
+</div>
+
+<p>Color: {{ color }}</p>
+
+{% endblock %}
